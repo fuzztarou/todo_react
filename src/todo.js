@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ApiFetch from './components/ApiFetch';
 
 export default class Todo extends Component {
 
@@ -41,6 +42,9 @@ export default class Todo extends Component {
                 <button onClick={() => {this.removeTodo(index)}}>削除</button>
                 </li>)}
             </ul>
+
+            <ApiFetch />
+
         </div>);
     }
 }
